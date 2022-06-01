@@ -1,3 +1,30 @@
 <!DOCTYPE html>
 
-BLAST Facilitatotr
+<h1>BLAST Facilitatotr</h1>
+
+<form name="dataEntry" required 
+      method="post" enctype="multipart/form-data" onsubmit="return validateForm()>
+  
+  <p>
+    <label for="uploads">Choose fastq or fasta files to be analyzed: </label>
+    <input multiple type="file" id="uploads" name="uploads"
+           accept=".gz,.fastq,.fasta">
+  </p>
+  
+  <p>
+    <label for="zipped">Is it zipped?</label>
+    <select name="zipped" id="zipped">
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+  </p>
+  
+  <p>
+    <label for="filetype">Is it fasta or fastq?</label>
+    <select multiple name="filetype" id="filetype">
+      <option>.fasta</option>
+      <option>.fastq</option>
+    </select>
+  </p>
+  
+</form>
