@@ -2,7 +2,7 @@
 
 <h1>BLAST Facilitator</h1>
 
-<form required name="dataEntry" method="post" enctype="multipart/form-data">
+<form required name="dataEntry" method="post" enctype="multipart/form-data" action="data_processing.php">
   
   <p>
     <label for="uploads">Choose fastq or fasta files to be analyzed: </label>
@@ -11,21 +11,15 @@
   </p>
   
   <p>
-    <label for="zipped">Is it zipped?</label>
-    <select name="zipped" id="zipped">
-      <option>Yes</option>
-      <option>No</option>
-    </select>
+
+    Choose your file types: <br>
+    <input type="checkbox" id=".gz" name=".gz">
+    <label for=".gz">.gz</label>
+    <input type="checkbox" id="fasta" name="fasta">
+    <label for="fasta">fasta</label>
+    <input type="checkbox" id="fastq" name="fastq">
+    <label for="fastq">fastq</label>
+
   </p>
-  
-  <p>
-    <label for="filetype">Is it fasta or fastq?</label>
-    <select multiple name="filetype" id="filetype">
-      <option>.fasta</option>
-      <option>.fastq</option>
-    </select>
-  </p>
-      
-      <input type="submit" value="Submit">
   
 </form>
