@@ -2,8 +2,7 @@
 
 <h1>BLAST Facilitator</h1>
 
-<form name="dataEntry" required 
-      method="post" enctype="multipart/form-data" onsubmit="return validateForm()>
+<form required name="dataEntry" method="post" enctype="multipart/form-data">
   
   <p>
     <label for="uploads">Choose fastq or fasta files to be analyzed: </label>
@@ -26,5 +25,7 @@
       <option>.fastq</option>
     </select>
   </p>
+      
+      <input type="submit" value="Submit">
   
 </form>
