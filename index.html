@@ -8,28 +8,33 @@
 <!-- -->
 <form required name="dataEntry" method="post" enctype="multipart/form-data" 
       action="data_processing.php" target="_blank">
-  
-  <p>
-    <label for="uploads">Choose fastq or fasta files to be analyzed: </label><br>
-    <input multiple type="file" id="uploads" name="uploads"
-           accept=".gz,.fastq,.fasta">
-  </p>
-  
-  <p>
-    Choose your file types: <br>
-    <input type="checkbox" id=".gz" name=".gz">
-    <label for=".gz">.gz</label><br>
-    <input type="checkbox" id="fasta" name="fasta">
-    <label for="fasta">fasta</label><br>
-    <input type="checkbox" id="fastq" name="fastq">
-    <label for="fastq">fastq</label><br>
-  </p>
-  
-  <input type="submit">
-  <input type="reset">
-  
+
+      <p>
+            <label for="uploads">Choose fastq or fasta files to be analyzed: </label><br>
+            <input multiple type="file" id="uploads" name="uploads"
+            accept=".gz,.fastq,.fasta">
+      </p>
+
+      <p>
+            Choose your file types: <br>
+            <input type="checkbox" id=".gz" name=".gz">
+            <label for=".gz">.gz</label><br>
+            <input type="checkbox" id="fasta" name="fasta">
+            <label for="fasta">fasta</label><br>
+            <input type="checkbox" id="fastq" name="fastq">
+            <label for="fastq">fastq</label><br>
+      </p>
+      
+      <p>
+            <label for="test">Testing variable: </label><br>
+            <input type="textbok" id="test" name="test">
+      </p>
+
+      <input type="submit">
+      <input type="reset">
+
 </form>
 
-      
+
 </body>
 </html>
